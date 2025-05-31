@@ -1,72 +1,128 @@
-"Description","Location"
-"nn::vfx2","71041aa018"
-"nn::font","71041aadc0"
-"nn::ui2d","71041b3488"
-"nn::gfx","71041da3c8"
-"nn::g3d2","71041da440"
-"nn::mc","71041daa00"
-"nn::aev","71041db270"
-"havok","71041db380"
-"evfl","71042d5e78"
-"game","71042d5ea8"
-"sead","71045b5e60"
-"agl","71045b8ee0"
-"gsys","71045bec08"
-"ares","71045c7d10"
-"aal","71045c8a30"
-"xlink2","71045cdc38"
-"pp","71045cea28"
-"eui","71045d1700"
-"bgm","71045d55d0"
-"alto","71045d6958"
-"ai","71045d8160"
-"as","71045db1d8"
-"as::expression (maybe)","71045dd898"
-"phive","71045dde90"
-"gmd","71045f8078"
-"erepo","71045fa288"
-"rmbl","71045fa660"
-"tera","71045fa920"
-"shaft::baseproc","71045fc818"
-"shaft::texture","71045fcd98"
-"shaft::effect","71045fcf30"
-"shaft::heap","71045fcf50"
-"shaft::bake","71045fd098"
-"engine::actor","71045fd628"
-"engine::ai","71045ff300"
-"engine::as","71045ff8f0"
-"engine::bake","71045fffb0"
-"engine::banc","7104600248"
-"engine::camera","7104600648"
-"engine::component","71046008e8"
-"engine::controller","7104603c48"
-"engine::debug","7104603fc0"
-"engine::effect","7104604218"
-"engine::event","7104604508"
-"engine::expression (maybe?)","7104606330"
-"engine::framework","71046063f0"
-"engine::gamedata","71046065a0"
-"engine::graphics","7104606710"
-"engine::lod","71046071d8"
-"engine::logic (maybe?)","71046073a0"
-"engine::lua","7104607408"
-"engine::module","7104607538"
-"engine::??? (most of the debug-related modules are here)","71046075c8"
-"---ModuleSystem for reference---","7104607d20"
-"engine::movie","7104607e40"
-"engine::physics","7104608198"
-"engine::rail","7104608bb8"
-"engine::reaction","7104608db0"
-"engine::resource","71046099a0"
-"engine::rsdb","710460ba40"
-"engine::scene","710460c878"
-"engine::sound","710460d0a8"
-"spylog whatever that does","710460d270"
-"engine::system","710460d3a8"
-"engine::terrain","710460d698"
-"engine::tool","710460dca0"
-"engine::transceiver","710460df38"
-"engine::ui","710460e168"
-"engine::visualize","710460e868"
-"engine::xlink","710460e998"
-"bunch of assorted engine TypedParams","710460f5c8"
+Description                                                     Address
+nn::vfx2	                                                    0x71041aa018
+nn::font	                                                    0x71041aadc0
+nn::ui2d	                                                    0x71041b3488
+nn::gfx	                                                        0x71041da3c8
+nn::g3d2	                                                    0x71041da440
+nn::mc	                                                        0x71041daa00
+nn::aev	                                                        0x71041db270
+havok	                                                        0x71041db380
+evfl	                                                        0x71042d5e78
+txtg	                                                        0x71042d5e98
+main.cpp	                                                    0x71042d6060
+game::ai	                                                    0x71042d6188
+game::aischedule	                                            0x71042d7e98
+??? has game::autoplace and some battle stuff	                0x71042d9948
+game::camera	                                                0x71042d9e70
+game::cave	                                                    0x71042dc7a0
+game::chm	                                                    0x71042ddf18
+game::combine	                                                0x71042e5618
+game::cull	                                                    0x71042e5dc0
+game::effect	                                                0x71042e66d8
+dying message (could be part of game::event)	                0x71042e7b50
+game::event	                                                    0x71042e7ce0
+game::forest	                                                0x71042e9598
+game::actor (for some reason the alphabet restarts here hmm)	0x71042eb1c0
+game::actorholder	                                            0x71042ecba0
+game::affiliation	                                            0x71042ed030
+game::aischedule	                                            0x71042ed360
+game::animal	                                                0x71042ed4c0
+game::apc	                                                    0x71042ee608
+game::attention	                                                0x71042eeb38
+game::bake	                                                    0x71042f3040
+game::banc	                                                    0x71042f33a0
+game::bsa	                                                    0x71042f3428
+game::capture	                                                0x710430cad8
+game::cave	                                                    0x710430da28
+game::cavemarker	                                            0x710430daf0
+game::challenge	                                                0x710430dd00
+game::chm	                                                    0x710430e038
+game::component	                                                0x7104310020
+game::gamebalance	                                            0x7104354410
+gameparameters?	                                                0x7104356b88
+game::gfx	                                                    0x710436c058
+game::grass	                                                    0x7104372b40
+game::life	                                                    0x71043774a0
+game::logic	                                                    0x7104377888
+game::module	                                                0x7104384f88
+game::pathfinding	                                            0x7104385e78
+game::patrol	                                                0x7104386158
+game::perception	                                            0x7104386448
+game::phive (or phive::game?)	                                0x71043877d0
+game::playreport	                                            0x7104388d08
+game::pointlight	                                            0x7104388e48
+game::prequelsavedata	                                        0x7104389048
+game::reaction	                                                0x7104389488
+game::rsdb	                                                    0x710438aa50
+game::scene	                                                    0x710438bed0
+game::sequence	                                                0x7104392598
+game::sound	                                                    0x71043bea88
+game::system	                                                0x71043c7048
+game::terrain	                                                0x71043cb0d0
+game::tool	                                                    0x71043cb5f0
+game::ui	                                                    0x71043cb7d8
+game::vstats	                                                0x71043eb608
+game::wm	                                                    0x71043ebdb8
+game::xlink	                                                    0x71043f0f40
+game ai nodes	                                                0x71043f1c58
+sead	                                                        0x71045b5e50
+agl	                                                            0x71045b8ee0
+gsys	                                                        0x71045bec08
+ares	                                                        0x71045c7d10
+aal	                                                            0x71045c8a30
+xlink2	                                                        0x71045cdc38
+pp	                                                            0x71045cea28
+eui	                                                            0x71045d1700
+bgm	                                                            0x71045d55d0
+alto	                                                        0x71045d6958
+ai	                                                            0x71045d8160
+as	                                                            0x71045db1d8
+as::expression (maybe)	                                        0x71045dd898
+phive	                                                        0x71045dde90
+gmd	                                                            0x71045f8078
+erepo	                                                        0x71045fa288
+rmbl	                                                        0x71045fa660
+tera	                                                        0x71045fa920
+shaft::baseproc	                                                0x71045fc818
+shaft::texture	                                                0x71045fcd98
+shaft::effect	                                                0x71045fcf30
+shaft::heap	                                                    0x71045fcf50
+shaft::bake	                                                    0x71045fd098
+engine::actor	                                                0x71045fd628
+engine::ai	                                                    0x71045ff300
+engine::as	                                                    0x71045ff8f0
+engine::bake	                                                0x71045fffb0
+engine::banc	                                                0x7104600248
+engine::camera	                                                0x7104600648
+engine::component	                                            0x71046008e8
+engine::controller	                                            0x7104603c48
+engine::debug	                                                0x7104603fc0
+engine::effect	                                                0x7104604218
+engine::event	                                                0x7104604508
+engine::expression (maybe?)	                                    0x7104606330
+engine::framework	                                            0x71046063f0
+engine::gamedata	                                            0x71046065a0
+engine::graphics	                                            0x7104606710
+engine::lod	                                                    0x71046071d8
+engine::logic (maybe?)	                                        0x71046073a0
+engine::lua	                                                    0x7104607408
+engine::module	                                                0x7104607538
+engine::??? (most of the debug-related modules are here)	    0x71046075c8
+---ModuleSystem for reference---	                            0x7104607d20
+engine::movie	                                                0x7104607e40
+engine::physics	                                                0x7104608198
+engine::rail	                                                0x7104608bb8
+engine::reaction	                                            0x7104608db0
+engine::resource	                                            0x71046099a0
+engine::rsdb	                                                0x710460ba40
+engine::scene	                                                0x710460c878
+engine::sound	                                                0x710460d0a8
+spylog whatever that does	                                    0x710460d270
+engine::system	                                                0x710460d3a8
+engine::terrain	                                                0x710460d698
+engine::tool	                                                0x710460dca0
+engine::transceiver	                                            0x710460df38
+engine::ui	                                                    0x710460e168
+engine::visualize	                                            0x710460e868
+engine::xlink	                                                0x710460e998
+bunch of assorted engine TypedParams	                        0x710460f5c8
